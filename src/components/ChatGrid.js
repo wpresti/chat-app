@@ -14,7 +14,7 @@ export class ChatGrid extends Component{
 }
 export default ChatGrid
 
-const header = {girdArea: "header"}
+const header = {gridArea: "header"}
 const menu = {gridArea: "menu"}
 const main = {gridArea: "main"}
 const right = {gridArea: "right"}
