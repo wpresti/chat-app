@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MessageBox from './MessageBox';
 
 export class ChatGrid extends Component{
 
@@ -6,7 +7,7 @@ export class ChatGrid extends Component{
         return <div className="grid-container" style={gridContainer}>
                 <div className="header" style={Object.assign({}, header, gridElement)}>Header</div>
                 <div className="menu" style={Object.assign({}, menu, gridElement)}>Menu</div>
-                <div className="main" style={Object.assign({}, main, gridElement)}>Main</div>  
+                <div className="main" style={Object.assign({}, main, gridElement)}><MessageBox></MessageBox></div>  
                 <div className="right" style={Object.assign({}, right, gridElement)}>Right</div>
                 <div className="footer" style={Object.assign({}, footer, gridElement)}>Footer</div>
         </div>
@@ -23,18 +24,27 @@ const footer = {gridArea: "footer"}
 const gridContainer = {
     display: "grid",
     gridTemplateAreas: `'header header header header header header'
-    'menu main main main right right'
+    'menu main main main main right'
+    'menu main main main main right'
+    'menu main main main main right'
+    'menu main main main main right'
+    'menu main main main main right'
+    'menu main main main main right'
+    'menu main main main main right'
+    'menu main main main main right'
     'footer footer footer footer footer footer'`,
     gridGap: "10px",
     backgroundColor: "#2196F3",
     padding: "10px",
     width: "100vw",
-    height: "100vh"
+    height: "100vh",
+    gridTemplateRows: "minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr)",
+    gridTemplateColumns: "minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr)"
 }
 
 const gridElement = {
     backgroundColor: "rgba(255,255,255,0.8)",
-    textAlign: "center",
+    // textAlign: "center",
     padding: "20px",
-    fontSize: "30px"
+    fontSize: "30px",
 }
