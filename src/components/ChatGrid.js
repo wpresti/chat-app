@@ -24,8 +24,7 @@ const gridContainer = {
     display: "grid",
     gridTemplateAreas: `'header header header header header header'
     'menu main main main right right'
-    'menu main main main right right'
-    'menu footer footer footer footer footer'`,
+    'footer footer footer footer footer footer'`,
     gridGap: "10px",
     backgroundColor: "#2196F3",
     padding: "10px" 
