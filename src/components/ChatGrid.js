@@ -27,7 +27,9 @@ const gridContainer = {
     'footer footer footer footer footer footer'`,
     gridGap: "10px",
     backgroundColor: "#2196F3",
-    padding: "10px" 
+    padding: "10px",
+    width: "100vw",
+    height: "100vh"
 }
 
 const gridElement = {
