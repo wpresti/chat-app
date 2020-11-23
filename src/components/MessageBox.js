@@ -1,32 +1,15 @@
 import React, { Component } from 'react'
+import MessageMapper from './MessageMapper'
 
 export class MessageBox extends Component {
-    state = {
 
-    }
     //https://stackoverflow.com/questions/29793160/making-unordered-list-scrollable/29793235
     render() {
+        console.log(this.props.messageList)
         return (
             <div style={divContainer}>
                 <dl style={detailedList}>
-                    <dt>John Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
-                    <dt>John Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
-                    <dt>John Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
-                    <dt>John Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
-                    <dt>John Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
-                    <dt>Tim Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
-                    <dt>Tim Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
-                    <dt>Tim Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
-                    <dt>Tim Doe</dt>
-                    <dd>Hi my name is John Doe</dd>
+                    <MessageMapper messageList={this.props.messageList}></MessageMapper>
                 </dl>
             </div>
         )

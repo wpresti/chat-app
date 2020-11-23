@@ -7,7 +7,7 @@ export class ChatGrid extends Component{
         return <div className="grid-container" style={gridContainer}>
                 <div className="header" style={Object.assign({}, header, gridElement)}>Header</div>
                 <div className="menu" style={Object.assign({}, menu, gridElement)}>Menu</div>
-                <div className="main" style={Object.assign({}, main, gridElement)}><MessageBox></MessageBox></div>  
+                <div className="main" style={Object.assign({}, main, gridElement)}><MessageBox messageList = {this.props.messageList}></MessageBox></div>  
                 <div className="right" style={Object.assign({}, right, gridElement)}>Right</div>
                 <div className="footer" style={Object.assign({}, footer, gridElement)}>Footer</div>
         </div>
