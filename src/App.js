@@ -10,7 +10,7 @@ class App extends Component{
     {userName: "test2Usr", msg: "Hello world4!"},
     {userName: "test1Usr", msg: "Hello world5!"},
     {userName: "test1Usr", msg: "Hello world6!"},
-    {userName: "test1Usr", msg: "Hello world7!"},]
+    {userName: "test1Usr", msg: "Hello world7! this is a looooooooooooooooooooooooooooooooogggg msg."},]
   }
 
   render(){

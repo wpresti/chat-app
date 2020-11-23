@@ -19,7 +19,7 @@ export class Message extends Component {
         return(
             <div className="container" style={container}>
                 {/* <h1>{}</h1> */}
-                <p>{msg}</p>
+                <p style={p}>{msg}</p>
                 <span style={span}>{userName}</span>
             </div>
         )
@@ -28,10 +28,15 @@ export class Message extends Component {
 
 export default Message
 
+const p = {
+    fontSize: "large",
+    whiteSpace: "wrap",
+    overflow: "visible"
+}
+
 const container = {
     display: "flex",
-    // flexDirection: "row",
-    flexFlow: "column wrap",
+    flexFlow: "row wrap",// row wrap
     border: "2px solid #dedede",
     backgroundColor: "#f1f1f1",
     borderRadius: "15px",
@@ -41,7 +46,6 @@ const container = {
 }
 
 const span = {
-    float: "right",
     color: "#aaa"
 }
 
