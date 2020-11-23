@@ -9,11 +9,25 @@ export class Message extends Component {
         console.log("username:", userName, "msg:", msg)
         return (
             <div>
-                <dt>{userName}</dt>
-                <dd>{msg}</dd>
+                <dt style={dtStyle}>{userName}</dt>
+                <dd style={ddStyle}>{msg}</dd>
             </div>
         )
     }
 }
 
 export default Message
+
+const dtStyle = {
+    
+}
+
+const ddStyle = {
+    float: "right",
+    background: "#0084ff",
+    boarderBottomRightRadius: "10px",
+    boarderTopRightRadius: "5px",
+    boarderTopLeftRadius: "5px",
+    boarderBottomLeftRadius: "5px",
+    marginRight: "20px"
+}
