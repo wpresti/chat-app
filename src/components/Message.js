@@ -4,13 +4,23 @@ export class Message extends Component {
     componentDidMount() {
         console.log("mESSAGE MOUNTED",this.props.msg)
     }
+    // render() {
+    //     const {userName, msg} = this.props.msg
+    //     console.log("username:", userName, "msg:", msg)
+    //     return (
+    //         <div>
+    //             <dt style={dtStyle}>{userName}</dt>
+    //             <dd style={ddStyle}>{msg}</dd>
+    //         </div>
+    //     )
+    // }
     render() {
         const {userName, msg} = this.props.msg
-        console.log("username:", userName, "msg:", msg)
-        return (
-            <div>
-                <dt style={dtStyle}>{userName}</dt>
-                <dd style={ddStyle}>{msg}</dd>
+        return(
+            <div className="container" style={container}>
+                {/* <h1>{}</h1> */}
+                <p>{msg}</p>
+                <span style={span}>{userName}</span>
             </div>
         )
     }
@@ -18,16 +28,38 @@ export class Message extends Component {
 
 export default Message
 
-const dtStyle = {
-    
+const container = {
+    display: "flex",
+    // flexDirection: "row",
+    flexFlow: "column wrap",
+    border: "2px solid #dedede",
+    backgroundColor: "#f1f1f1",
+    borderRadius: "15px",
+    padding: "10px",
+    margin: "10px 0",
+    justifyContent: "space-between"
 }
 
-const ddStyle = {
+const span = {
     float: "right",
-    background: "#0084ff",
-    boarderBottomRightRadius: "10px",
-    boarderTopRightRadius: "5px",
-    boarderTopLeftRadius: "5px",
-    boarderBottomLeftRadius: "5px",
-    marginRight: "20px"
+    color: "#aaa"
 }
+
+
+// const dtStyle = {
+//     border: "2px solid #dedede",
+//     backgroundColor: "#f1f1f1",
+//     borderRadius: "5px",
+//     padding: "10px",
+//     margin: "10px 0"
+// }
+
+// const ddStyle = {
+//     float: "right",
+//     background: "#0084ff",
+//     borderBottomRightRadius: "10px",
+//     borrderTopRightRadius: "5px",
+//     borderTopLeftRadius: "5px",
+//     borderBottomLeftRadius: "5px",
+//     marginRight: "20px"
+// }
